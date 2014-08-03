@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Document Structure
+    </title>
+    <link rel="stylesheet" type="text/css" href="register_style.css" />
+	
+	<style>
+	 .register{
+	   decoration:none;
+	 }
+	</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+	<form name="login-form" class="login-form" action="register.php" method="post">
+	
+		<div class="header">
+		<h1>Register to avail services </h1>
+		<img src = "page_icon.jpg" style = "width:25px;height:25px" ></img>
+		<span>Fill out the form below to register for Travelopedia&copy Pro features .</span>
+		</div>
+	
+		<div class="content">
+		<input name="username" type="text" class="input username" placeholder="Username" id = "username"/>
+		<div class="user-icon"></div>
+		<input name="email" type="email" class="input email" placeholder="Email" id = "email"/>
+		<div class="email-icon"></div>
+		<input name="password" type="password" class="input password" placeholder="Password"  id = "password"/>
+		<div class="pass-icon"></div>		
+		<input name="confirm_password" type="password" class="input confirmpassword" placeholder="Confirm Password"  id = "confirm_password"/>
+		<div class="confirmpass-icon"></div>		
+		</div>
+
+		<div class="footer">
+		<input type="submit" name="submit" value="Register" class="button /> <!--  this is for alredy existing users -->
+		
+		</div>
+	
+	</form>
+
+</div>
+<div class="gradient"></div>
+
+
+</body>
+</html>

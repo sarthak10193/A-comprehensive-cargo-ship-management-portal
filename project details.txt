@@ -1,0 +1,37 @@
+1)login credential only if the user wants to leave comments 
+
+2) home
+   enter the source 
+   enter the destination 
+   submit 
+   
+    
+
+3)about us
+
+4)transit
+   ==> im feeling lucky - it tells you the best means of transport depending at the time of the day 
+   ==> buses
+         --> routes&fares:from to form ; timings ;fares;ac/nonac;stops in no and palces
+   ==> metro
+     --> last and first metro timings and ticket counter closes at time?
+     --> from to show the map and the fare
+     --> nearby places ex: get down at rajiv chowk and it tells about CP 
+  
+   ==> cab servies
+       -- details about cab services phone_no ;fares; service_quality ;type_of_cars; websitelinks 
+    
+5)traffic status 
+6)city projects 
+7)city tours
+  ==> education 
+  ==> recreational == red fort; lutus temple ; 
+   khan market ; india gate ; nationnal rail mueseum ;
+    lodi garden ; akshardham 
+
+8) travelling salesman problem
+
+
+
+
+

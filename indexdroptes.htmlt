@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type = "text/css">
+body{
+ background-repeat:no-repeat;
+ background-size:1400px 750px;  
+}
+
+#message{
+ color:white;
+ font-family:verdana;
+ font-size:25pt;
+ font-weight:bold;
+ margin-left:20px;
+ margin-top:50px;
+}
+
+.textbox{
+ border:1px soled #848484;
+-webkit-border-radius:30px;
+-moz-border-radius:30px;
+ border-radius:30px;
+ outline:0;
+ height:20px;
+ width:200px;
+ padding-left:10px;
+ padding-right:10px;
+ margin-left:20px;
+ color:#D0D0D0;
+}
+
+ul{
+padding:0;
+list-style: none;
+}
+ul li{
+ float:left;
+ width:150px;
+ text-align:center;
+}
+
+ul li a{
+ display:block;
+ padding:5px 10px;
+ text-decoration:none;
+}
+ul li a: hover{
+
+ color:#FFF;
+   background: #939393; 
+}
+ul li ul
+{
+  dispalay:none;
+}
+ul li:hover ul{
+ display: block;  <!--display the bloack-->
+}
+
+</style>
+<script type = "text/javascript" src="jquery/jquery.js"></script>
+<script src = "jquery-ui-1.10.3/ui/jquery-ui.js">
+<link rel="styslesheet" type="text/css" href="jquery.autocomplete.css" />
+
+<script type = "text/javascript">
+jQuery(document).ready(function($){
+ $('#idsource').autocomplete({source:'search_zip.php', minLenght:2});
+ });
+
+</script>
+
+</head>
+
+<body background="bus1.jpg">
+<div id="header" class = "div_header"  style="height:40px;font-family:verdana;font-size:11pt; "  >
+<ul>
+<li><a href = "file:///C:/STUDY/transportation%20portal/baisc%20web%20page.html" style = "text-decoration: none ;color:#D0D0D0;margin-left:80px"> Home </a></li>
+<li><a href ="" class ="headers" style = "text-decoration:none; color:#D0D0D0 ; margin-left:80px"> About Us </a></li>
+<li>
+   <a href = "file:///C:/STUDY/transportation%20portal/transit.html"  style = "text-decoration:none;  margin-left:80px"> Transit </a>
+    <ul>
+	   <li><a href "#">afddsf</a>
+	   <li><a href "#">afddsf</a>
+	   <li><a href "#">afddsf</a>
+	   
+	</ul>
+</li>	
+<li><a href = "file:///C:/STUDY/transportation%20portal/traffic_status.html" style = "text-decoration:none;margin-left:80px"> Traffic Status </a></li>
+<li><a href = "file:///C:/STUDY/transportation%20portal/city_projects.html" style = "text-decoration:none; margin-left:80px"> City Projects </a></li>
+</ul>
+</div>
+
+<div id= "content" style="height:500px">
+ <p id="message"> REACH THE BEST WAY U CAN</p>
+ <!-- this form passes the source and destination to the search_map_view.php page to mark the direction between the two  -->
+ <form id = "calculate-route" name = "calculate-route" action = "search_map_view.php" method = "post">
+  <input type="text"  class = "textbox" name= "src"  id="idsource" ><br><br>
+  <input type="text" class = "textbox" name = "dest" value = "Destination" id="iddest"><br><br>
+  <input type = "submit" value ="Submit" style = "margin-left:40px" ><br>
+  </form>
+</div>
+
+<div id="footer" style = "height:50px;">
+</div>
+
+
+</body>
+</html>

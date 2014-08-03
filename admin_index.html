@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8" />
+   
+     <script>
+	
+     function controlSpeed()
+	 {
+	  document.getElementById("news").setAttribute('scrollamount',3,0);
+	 }
+	 </script>
+	 
+	
+	 
+<style type = "text/css">
+
+
+
+body{
+ background-repeat:no-repeat;
+ background-size:1400px 750px;  
+ background-image:url("user_index.jpg");
+ 
+}
+
+#message{
+ color:white;
+ font-family:verdana;
+ font-size:30pt;
+ font-weight:bold;
+ margin-left:20px;
+ margin-top:50px;
+}
+.input_data
+{
+  margin-left:20px;
+}
+
+
+
+ul{
+		padding: 0;
+        list-style:none;
+		
+    }
+	
+	
+    ul li{
+              
+	   float: left;
+       width: 230px;
+       text-align: center;
+    }
+    ul li a{
+              
+	    display: block;
+        padding: 6px 9px;
+        color: #333;
+        font-size:17px;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color:white;
+    }
+    ul li ul{
+        
+		display: none;
+    }
+    ul li:hover ul{
+		display: block; /* display the dropdown */
+    }
+#mapdisplay{
+
+        width: 700px;
+        height: 500px;
+        float:right;
+		margin-top:100px;
+		background-color:gray;
+
+}
+marquee
+{
+ color:white;
+ size:20px;
+font-weight:bold;
+}
+h5{
+ margin-left:1240px;
+ font-family:verdana;
+ color:white;
+ 
+}
+
+</style>	 
+  </head>
+  
+  <body onload = "controlSpeed()">
+    
+	<div id = "header" Style = "height:70px;font-family:verdana;font-size:11pt;">
+    <ul>
+        <li><a href= "http://localhost/cargo/user_index.html" style = "text-decoration: none ;margin-left:80px" >Home</a></li>
+        <li>
+            <a href="#"  style = "text-decoration:none;  margin-left:80px;">Settings</a>
+            <ul>
+                    <li><a href="http://localhost/cargo/location.php" style = "text-decoration :none; margin-left:80px">Add Location</a></li>
+                    <li><a href="http://localhost/cargo/price_routes_admin.php" style = "text-decoration :none; margin-left:80px">change Prices</a></li>
+                    
+			</ul>
+        </li>
+		 <li><a href="http://localhost/cargo/all_bookings.php" style = "text-decoration:none;margin-left:80px">Confirm Status </a></li>
+		 <li><a href="http://localhost/cargo/old_bookings.php" style = "text-decoration:none;margin-left:80px">Old Bookings </a></li>
+        
+         
+	 <li><a href="http://localhost/cargo/index.html" style = "text-decoration:none;margin-left:80px">Login/Register </a></li>
+	    
+		
+	
+	</ul>
+</div>
+	
+	
+	<div id= "content" style="height:430px">
+    <!-- diplay randon info in this div -->
+    </div>
+	
+	    <marquee id = "news">News Flash :  Cargo Manager goes "INTERNATIONAL" , Services now extended  across Europe , North America and South Africa, BOOK NOW !!!!</marquee>
+		
+    	<a href = "http://localhost/cargo/logout.php"> <img src = "logout.png" style = "margin-left:1270px ;width:42px;height:42px;margin-top:30px;"  type = "submit" class = "user_image" ></img>	</a>
+	    <h5>Hi Admin</h5>
+	
+
+	
+	
+	  
+  </body>
+</html>

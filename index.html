@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Document Structure
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<style>
+	 .register{
+	   decoration:none;
+	 }
+	 img 
+	 {
+	   height:40px;
+	   width:40px;
+	   margin-left:500px;
+	   
+	 }
+	 .top_div 
+	 {
+	  height:40px;
+	 }
+	</style>
+</head>
+<body>
+<div class = "top_div">
+</div>
+<div id="wrapper">
+
+	<form name="login-form" class="login-form" action="login.php" method="post">
+	
+		<div class="header">
+		<h1>Login to enjoy our services</h1>
+		<span>Fill out the form below to login .</span>
+		</div>
+	
+		<div class="content">
+		<input name="username" type="text" class="input username" placeholder="Username" id = "username"/>
+		<div class="user-icon"></div>
+		<input name="password" type="password" class="input password" placeholder="Password"  id = "password"/>
+		<div class="pass-icon"></div>		
+		</div>
+
+		<div class="footer">
+		<input type="submit" name="submit" value="Login" class="button"/> <!--  this is for alredy existing users -->
+		<a href = "http://localhost/cargo/register.html" type="submit" name="submit" value="Register" class="register"  >Register</a>  <!--  this is for alredy existing users -->
+		</div>
+	
+	</form>
+
+</div>
+<div class="gradient"></div>
+
+
+</body>
+</html>

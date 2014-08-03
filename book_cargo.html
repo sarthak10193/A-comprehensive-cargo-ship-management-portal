@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple Sign Up Form by PremiumFreeibes.eu</title>
+
+	<!---------- CSS ------------>
+	<link rel="stylesheet" type="text/css" href="./book_cargo.css">
+     <style>
+	   img
+	   {
+	     margin-top:10px;
+	     height:25px;
+		 width:25px;
+		 margin-left:650px;
+	   }
+	   .home_div
+	   {
+	    height:40px;
+	   }
+	 </style>
+</head>
+
+<body>
+   <div class = "home_div">
+     <a href =" http://localhost/cargo/user_index.html"><img src = "homeicon.png" ></a>
+   </div>
+    <!--BEGIN #signup-form -->
+    <div id="signup-form">
+        
+        <!--BEGIN #subscribe-inner -->
+        <div id="signup-inner">
+        
+        	<div class="clearfix" id="header">
+        	
+        		<a href = "http://localhost/cargo/price_routes.html"><img id="signup-icon" src="help.jpg" alt="help" /></a>
+        
+                <h1>Book your shipment now !!!</h1>
+
+            
+            </div>
+			<p>Please complete the fields below, to sucessfully book a cargo.</p>
+
+            
+            <form id="send" action="book.php" method = "POST">
+            	
+                <p>
+
+                <label for="name">Your User_Name *</label>
+                <input id="name" type="text" name="name" value="" />
+                </p>
+                
+                <p>
+
+                <label for="email">Email *</label>
+                <input id="email" type="text" name="email" value="" />
+                </p>
+                
+                
+                <p>
+
+                <label for="phone">Phone</label>
+                <input id="phone" type="text" name="phone" value="" />
+                </p>
+                
+                <p>
+                <label for="source">Source</label>
+                <input id="source" type="text" name="source" value="" />
+                </p>
+                
+				<p>
+                <label for="destination">Destination</label>
+                <input id="destination" type="text" name="destination" value="" />
+                </p>
+                
+				<p>
+                <label for="weight">Weight</label>
+                <input id="weight" type="text" name="weight" value="" />
+                </p>
+                
+				
+                <p>
+                <label for="profile">Additinal Info about the Object(fragile etc...)</label>
+                <textarea name="profile" id="profile" cols="10" rows="4"></textarea>
+
+                </p>
+                
+                <p>
+
+                <button id="submit" type="submit">Submit</button>
+                </p>
+                
+            </form>
+            
+		<div id="required">
+		<p>* Required Fields<br/>
+		NOTE: You must activate your account after sign up</p>
+		</div>
+
+
+            </div>
+        
+        <!--END #signup-inner -->
+        </div>
+        
+    <!--END #signup-form -->   
+    </div>
+
+</body>
+</html>
